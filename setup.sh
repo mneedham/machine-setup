@@ -2,10 +2,11 @@
 profile_file="$HOME/.bash_profile"
 
 # Install some tools we use
-yum install wget
-yum install vim
-yum install git
-yum install ack
+yum install -y gcc
+yum install -y wget
+yum install -y vim
+yum install -y git
+yum install -y ack
 
 # download and install jdk
 wget http://oracleotn.rd.llnwd.net/otn-pub/java/jdk/6u25-b06/jdk-6u25-linux-x64-rpm.bin -O jdk.rpm.bin 
@@ -34,8 +35,8 @@ wget http://download-ln.jetbrains.com/idea/ideaIC-10.5.tar.gz -O intellij.tar.gz
 tar -zxvf intellij.tar.gz
 
 # download and install MarkLogic
-yum install glibc.i686
-yum install lsb
+yum install -y glibc.i686
+yum install -y lsb
 wget http://segblogr0065:5304/MarkLogic/MarkLogic.rpm -O MarkLogic.rpm
 rpm -i MarkLogic.rpm
 
