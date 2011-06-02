@@ -29,6 +29,7 @@ ln -s /usr/scala/scala-2.8.1.final/bin/scala /usr/bin/scala
 bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 source "$profile_file"
 rvm install 1.9.2
+rvm use 1.9.2
 
 # download and install IntelliJ
 wget http://download-ln.jetbrains.com/idea/ideaIC-10.5.tar.gz -O intellij.tar.gz
